@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import Cards from "../../componants/Card/Cards";
 import "./HeaderJobs.css";
 
 type JobsArray = {
@@ -69,7 +70,7 @@ function HeaderJobs() {
 
 			<ul className="cupcake-list" id="cupcake-list">
 				{filteredCategorie.map((job) => (
-					<li key={job.id}>{/* <Cards data={job} /> */}</li>
+					<li key={job.id}>{<Cards data={job} />}</li>
 				))}
 			</ul>
 		</>

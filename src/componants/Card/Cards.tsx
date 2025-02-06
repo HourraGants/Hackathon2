@@ -1,4 +1,20 @@
-interface EmploisProps {
+import "./Cards.css";
+
+// interface EmploisProps {
+// 	data: {
+// 		id: number;
+// 		image: string;
+// 		nom_du_poste: string;
+// 		ville: string;
+// 		date_debut: string;
+// 		duree: string;
+// 		description_du_poste: string;
+// 		qualification_requise: string;
+// 		categorie: string;
+// 		salaire: string;
+// 	};
+// }
+interface JobsArray {
 	data: {
 		id: number;
 		image: string;
@@ -7,18 +23,18 @@ interface EmploisProps {
 		date_debut: string;
 		duree: string;
 		description_du_poste: string;
-		qualfication_requise: string;
+		qualification_requise: string;
 		categorie: string;
 		salaire: string;
 	};
 }
 
-function emplois({ data }: EmploisProps) {
+function emplois({ data }: JobsArray) {
 	return (
 		<>
 			<div className="containerCard">
 				<div className="partieHaute">
-					<image className="categorie" href={data.image} />
+					<img className="categorie" src={data.image} alt="coucou" />
 					<h2>{data.nom_du_poste}</h2>
 				</div>
 				<p>{data.ville}</p>
@@ -36,7 +52,7 @@ function emplois({ data }: EmploisProps) {
 				</div>
 				<div>
 					<h3>Qualifications requises:</h3>
-					<p>{data.qualfication_requise}</p>
+					<p>{data.qualification_requise}</p>
 				</div>
 				<div>
 					<h3>Categorie:</h3>
