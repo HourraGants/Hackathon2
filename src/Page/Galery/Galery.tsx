@@ -1,24 +1,7 @@
-import Cards from "../../componants/Card/Cards";
+import HeaderJobs from "../../componants/HeaderJobs/HeaderJobs";
 
 function Galery() {
-	return (
-		<>
-			<Cards
-				data={{
-					id: 0,
-					image: "",
-					nom_du_poste: "",
-					ville: "",
-					date_debut: "",
-					duree: "",
-					description_du_poste: "",
-					qualfication_requise: "",
-					categorie: "",
-					salaire: "",
-				}}
-			/>
-		</>
-	);
+	return <HeaderJobs />;
 }
 
 export default Galery;
