@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.tsx";
 import Accueil from "./Page/Accueil/Accueil.tsx";
 import Galery from "./Page/Galery/Galery.tsx";
+import HeaderHome from "./componants/HeaderHome/HeaderHome.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
 			{
 				path: "/galery",
 				element: <Galery />,
+			},
+			{
+				path: "/HeaderHome",
+				element: <HeaderHome />,
 			},
 		],
 	},
