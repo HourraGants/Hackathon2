@@ -8,9 +8,7 @@ function Navbar() {
 		<>
 			<div className="navbar-container">
 				<div className="navbar">
-					<Link to="/">
-          <img src="../src/assets/logo.png" alt="Logo" title="Logo de la page" />
-          </Link>
+					<Link to="/"><img src="../src/assets/logo.png" alt="Logo" title="Logo de la page" /></Link>
 					<div>
 						<ul>
 							<li className={location.pathname === '/' ? 'active' : ''}>

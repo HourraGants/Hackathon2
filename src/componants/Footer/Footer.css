@@ -1,3 +1,87 @@
-.footer {
-	background-color: red;
+.footer-container {
+	display: flex;
+	justify-content: center;
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #FFF3DA;
+		border-radius: 40px;
+		width: 70%;
+		gap: 20px;
+		text-align: center;
+		box-shadow: 0 5px 2px rgb(199, 196, 196);
+
+		.footer-reseau {
+			display: flex;
+			gap: 130px;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		#footer-mentions {
+			display: flex;
+			gap: 50px;
+			font-size: 0.8rem;
+			font-style: italic;
+
+      .footer-mentions-text {
+        font-weight: 100;
+        font-style: italic;
+        font-size: 1rem;
+        background: none;
+        border: none;
+      }
+		}
+
+		.modal-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 243, 218, 0.5); /* Fond semi-transparent */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+		
+			.modal-content {
+			  width: 40%;
+			  background-color: rgb(255, 243, 218);
+			  padding: 20px;
+			  border-radius: 25px;
+			  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+			  overflow-y: auto; /* Pour activer le scroll si le contenu est trop long */
+			  max-height: 80vh; /* Limite la hauteur à 80% de la fenêtre */
+		
+			.modal-text {
+				max-height: 60vh; /* Limite la taille du texte */
+				overflow-y: auto;
+				font-size: 1rem;
+		
+				.modal-text-align {
+				display: flex;
+				flex-direction: column;
+				text-align: justify;
+				padding: 50px;
+				}
+			}
+		
+        .close-btn {
+          display: flex;
+          justify-self: end;
+          top: 10px;
+          right: 10px;
+          background: none;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+        }
+			}
+		}
+	}
 }
