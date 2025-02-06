@@ -1,5 +1,7 @@
+import HeaderJobs from "../../componants/HeaderJobs/HeaderJobs";
+
 function Galery() {
-	return <>je suis dans Galery</>;
+	return <HeaderJobs />;
 }
 
 export default Galery;
