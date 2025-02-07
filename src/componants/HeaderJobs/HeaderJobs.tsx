@@ -30,8 +30,9 @@ function HeaderJobs() {
 	}, [selectedCategorie, jobsArray]);
 
 	return (
-		<>
+		<div className="headerGalery">
 			<img
+				className="imageHeader"
 				src="https://www.tourisme-occitanie.com/uploads/2021/1/la-cite-medievale-de-carcassonne_g-deschamps-crt-occitanie.jpg"
 				alt="a random pecore with some cows"
 			/>
@@ -73,7 +74,7 @@ function HeaderJobs() {
 					<li key={job.id}>{<Cards data={job} />}</li>
 				))}
 			</ul>
-		</>
+		</div>
 	);
 }
 
