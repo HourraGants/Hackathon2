@@ -1,19 +1,6 @@
+import { Link } from "react-router-dom";
 import "./Cards.css";
 
-// interface EmploisProps {
-// 	data: {
-// 		id: number;
-// 		image: string;
-// 		nom_du_poste: string;
-// 		ville: string;
-// 		date_debut: string;
-// 		duree: string;
-// 		description_du_poste: string;
-// 		qualification_requise: string;
-// 		categorie: string;
-// 		salaire: string;
-// 	};
-// }
 interface JobsArray {
 	data: {
 		id: number;
@@ -67,9 +54,11 @@ function emplois({ data }: JobsArray) {
 						<button className="boutonGauche" type="button">
 							{data.salaire}
 						</button>
-						<button className="linkBouton" type="button">
-							Voir l'offre
-						</button>
+						<Link className="LinkBouton" to={"/detail/${data.id}"}>
+							<button className="linkBouton" type="button">
+								Voir l'offre
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
