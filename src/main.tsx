@@ -20,6 +20,7 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <Accueil />,
+				loader: () => getData("http://localhost:4242/emplois"),
 			},
 			{
 				path: "/galery",
