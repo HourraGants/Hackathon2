@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: space-around;
 	border-radius: 35px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 	@media (max-width: 800px) {
 		flex-direction: column;
 		padding: 20px;
@@ -32,11 +33,11 @@
 
 .cta-button {
 	display: inline-block;
-	background-color: #333;
-	color: #fff;
+	background-color: #393939;
+	color: white;
 	padding: 10px 20px;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 20px;
 	margin-top: 10px;
 	/* biome-ignore lint/suspicious/noShorthandPropertyOverrides: <explanation> */
 	margin: 40px;
