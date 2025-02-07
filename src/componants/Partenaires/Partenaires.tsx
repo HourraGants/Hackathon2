@@ -19,7 +19,6 @@ const toggleDescription = (partner) => {
     return (
         <>
           <div className="partenaires-container">
-          <hr />
             <div className="partenaires">
               <div className="partenaire">
                 <img src="../src/assets/charette.png" alt="charette" title="BlaBlaChar" className="partenaire-logo"/>
