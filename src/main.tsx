@@ -8,6 +8,7 @@ import App from "./App.tsx";
 import Accueil from "./Page/Accueil/Accueil.tsx";
 import Galery from "./Page/Galery/Galery.tsx";
 import HeaderHome from "./componants/HeaderHome/HeaderHome.tsx";
+import Detail from "./Page/Detail/Detail.tsx";
 
 const getData = async (linkToFetch: string) => {
 	const result = await axios.get(linkToFetch);
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
 			{
 				path: "/HeaderHome",
 				element: <HeaderHome />,
+			},
+			{
+				path: "/detail/:id",
+				element: <Detail />,
 			},
 		],
 	},
