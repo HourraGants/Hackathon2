@@ -54,7 +54,7 @@ function emplois({ data }: JobsArray) {
 						<button className="boutonGauche" type="button">
 							{data.salaire}
 						</button>
-						<Link className="LinkBouton" to={"/detail/${data.id}"}>
+						<Link className="LinkBouton" to={`/detail/${data.id}`}>
 							<button className="linkBouton" type="button">
 								Voir l'offre
 							</button>
