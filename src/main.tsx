@@ -7,6 +7,7 @@ import "./index.css";
 import App from "./App.tsx";
 import Accueil from "./Page/Accueil/Accueil.tsx";
 import Galery from "./Page/Galery/Galery.tsx";
+import SearchBarHome from "./componants/searchBar/searchBar.tsx";
 
 const getData = async (linkToFetch: string) => {
 	const result = await axios.get(linkToFetch);
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
 				path: "/galery",
 				element: <Galery />,
 				loader: () => getData("http://localhost:4242/emplois"),
+			},
+
+			{
+				path: "/searchBarHome",
+				element: <SearchBarHome />,
 			},
 		],
 	},
