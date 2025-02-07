@@ -44,13 +44,16 @@ function Detail() {
 
 	return (
 		<>
-			<div className="containerCard">
-				<img className="categorie" src={job.image} alt={job.nom_du_poste} />
-
+			<img
+				className="detailAnnonceHeader"
+				src={job.image}
+				alt={job.nom_du_poste}
+			/>
+			<div className="containerCard2">
+				{/* <img className="categorie" src={job.image} alt={job.nom_du_poste} /> */}
 				<div className="infoCard">
 					<div className="hautCard">
 						<h2>{job.nom_du_poste}</h2>
-
 						<div>
 							<h3>Date du début :</h3>
 							<p>{job.date_debut}</p>
@@ -76,7 +79,7 @@ function Detail() {
 						<button className="boutonGauche" type="button">
 							{job.ville}
 						</button>
-						<button className="boutonGauche" type="button">
+						<button className="boutonDroite" type="button">
 							{job.salaire}
 						</button>
 					</div>

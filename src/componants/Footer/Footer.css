@@ -1,82 +1,82 @@
 .footer-container {
 	display: flex;
 	justify-content: center;
-  margin: 20px 0;
+	margin: 20px 0;
 
 	.footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: #FFF3DA;
+		background-color: #fff3da;
 		border-radius: 40px;
-    padding-top: 20px;
-		width: 70%;
+		padding-top: 20px;
+		width: 80%;
 		gap: 20px;
 		text-align: center;
-		box-shadow: 0 5px 2px rgb(199, 196, 196);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
 		.footer-reseau {
 			display: flex;
 			gap: 100px;
-      font-weight: 600;
-      font-family: "Cinzel Decorative";
-      font-size: 0.8rem;
-      align-items: center;
+			font-weight: 600;
+			font-family: "Cinzel Decorative";
+			font-size: 0.8rem;
+			align-items: center;
 
 			img {
 				width: 30%;
 			}
 		}
-    
-    .footer-reseau img {
-      transition: transform 1s ease;
-    }
-    
-    .footer-reseau img:hover {
-      transform: rotate(360deg); /* Fait tourner l'icône */
-      cursor: pointer;
-    }
 
-    .footer-reseau div {
-      position: relative;
-      display: inline-block;
-      margin: 10px;
-    }
+		.footer-reseau img {
+			transition: transform 1s ease;
+		}
 
-    .footer-reseau .tooltip {
-      display: none;
-      position: absolute;
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #333;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 12px;
-      z-index: 1;
-      white-space: nowrap;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    .footer-reseau div:hover .tooltip {
-      display: block;
-      opacity: 1;
-    }
+		.footer-reseau img:hover {
+			transform: rotate(360deg); /* Fait tourner l'icône */
+			cursor: pointer;
+		}
+
+		.footer-reseau div {
+			position: relative;
+			display: inline-block;
+			margin: 10px;
+		}
+
+		.footer-reseau .tooltip {
+			display: none;
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #333;
+			color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 12px;
+			z-index: 1;
+			white-space: nowrap;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		.footer-reseau div:hover .tooltip {
+			display: block;
+			opacity: 1;
+		}
 
 		#footer-mentions {
 			display: flex;
 			gap: 50px;
 			font-size: 0.8rem;
 
-      .footer-mentions-text {
-        font-weight: 100;
-        font-style: italic;
-        font-size: 0.6rem;
-        background: none;
-        border: none;
-      }
+			.footer-mentions-text {
+				font-weight: 100;
+				font-style: italic;
+				font-size: 0.6rem;
+				background: none;
+				border: none;
+			}
 		}
 
 		.modal-overlay {
@@ -90,45 +90,45 @@
 			justify-content: center;
 			align-items: center;
 			z-index: 1000;
-		
-			.modal-content {
-			  width: 40%;
-			  background-color: rgb(255, 243, 218);
-			  padding: 20px;
-			  border-radius: 25px;
-			  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-			  overflow-y: auto; /* Pour activer le scroll si le contenu est trop long */
-			  max-height: 80vh; /* Limite la hauteur à 80% de la fenêtre */
-		
-			.modal-text {
-				max-height: 60vh; /* Limite la taille du texte */
-				overflow-y: auto;
-				font-size: 1rem;
-		
-				.modal-text-align {
-				display: flex;
-				flex-direction: column;
-				text-align: justify;
-				padding: 50px;
-        gap: 20px;
 
-        ul {
-          padding: 0 20px;
-          list-style: "➵ ";
-        }
+			.modal-content {
+				width: 40%;
+				background-color: rgb(255, 243, 218);
+				padding: 20px;
+				border-radius: 25px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+				overflow-y: auto; /* Pour activer le scroll si le contenu est trop long */
+				max-height: 80vh; /* Limite la hauteur à 80% de la fenêtre */
+
+				.modal-text {
+					max-height: 60vh; /* Limite la taille du texte */
+					overflow-y: auto;
+					font-size: 1rem;
+
+					.modal-text-align {
+						display: flex;
+						flex-direction: column;
+						text-align: justify;
+						padding: 50px;
+						gap: 20px;
+
+						ul {
+							padding: 0 20px;
+							list-style: "➵ ";
+						}
+					}
 				}
-			}
-		
-        .close-btn {
-          display: flex;
-          justify-self: end;
-          top: 10px;
-          right: 10px;
-          background: none;
-          border: none;
-          font-size: 20px;
-          cursor: pointer;
-        }
+
+				.close-btn {
+					display: flex;
+					justify-self: end;
+					top: 10px;
+					right: 10px;
+					background: none;
+					border: none;
+					font-size: 20px;
+					cursor: pointer;
+				}
 			}
 		}
 	}
