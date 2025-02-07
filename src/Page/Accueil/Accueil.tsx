@@ -1,12 +1,12 @@
+import HeaderHome from "../../componants/HeaderHome/HeaderHome";
 import AnnoncesAccueil from "../../componants/AnnoncesAccueil/AnnoncesAccueil";
 
 function Accueil() {
 	return (
 		<>
-			<p>je suis dans accueil</p>
+		<HeaderHome />
 			<AnnoncesAccueil />
 		</>
 	);
 }
-
 export default Accueil;
