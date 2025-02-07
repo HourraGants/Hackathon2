@@ -5,11 +5,11 @@ const HeaderHome = () => {
 	return (
 		<header className="headerHome-container">
 			<div className="headerHome-content">
-				<h1>
+				<h2>
 					Vous cherchez
 					<br />
 					un travail ?
-				</h1>
+				</h2>
 				{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
 				<a href="#" className="cta-button">
 					Voir nos offres
