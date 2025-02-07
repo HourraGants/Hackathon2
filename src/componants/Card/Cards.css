@@ -1,8 +1,7 @@
 .containerCard {
 	width: 80%;
 	height: 20rem;
-	border: solid 2px black;
-	box-shadow: 5px 5px 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 	display: flex;
 	flex-direction: row;
@@ -54,7 +53,7 @@
 		font-size: 1.2rem;
 		border-radius: 20px;
 		border: none;
-		box-shadow: 2px 2px 5px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		margin: 0 10px;
 	}
 	.linkBouton {
@@ -64,7 +63,7 @@
 		border: none;
 		background-color: #393939;
 		color: white;
-		box-shadow: 2px 2px 5px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		margin: 0 10px;
 	}
 }
