@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	font-size: 1.2rem;
+	padding-top: 10px;
 
 	.navbar {
 		display: flex;
@@ -9,6 +10,12 @@
 		align-items: center;
 		width: 60%;
 		gap: 100px;
+
+		.logos {
+			display: flex;
+			font-size: 1rem;
+			align-items: center;
+		}
 	}
 
 	ul {
@@ -24,6 +31,14 @@
 			background-color: #393939;
 			color: white;
 			border-radius: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		}
+
+		li.inactive {
+			
+			a {
+				text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+			}
 		}
 	}
 
