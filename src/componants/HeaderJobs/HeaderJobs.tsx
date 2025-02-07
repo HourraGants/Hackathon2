@@ -35,49 +35,51 @@ function HeaderJobs() {
 	}, [selectedCategorie, selectedVille, jobsArray]);
 
 	return (
-		<>
+		<div className="headerGalery">
 			<img
-				src="https://th.bing.com/th/id/OIP.TEnEY6tgmuHzHlfC0wgpYgHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7"
+				className="imageHeader"
+				src="https://www.tourisme-occitanie.com/uploads/2021/1/la-cite-medievale-de-carcassonne_g-deschamps-crt-occitanie.jpg"
 				alt="a random pecore with some cows"
 			/>
 
 			<form className="center">
 				{/* Filtre par catégorie */}
-				<label htmlFor="categorie-select">
-					Filtrer par catégorie :{" "}
-					<select
-						id="categorie-select"
-						value={selectedCategorie}
-						onChange={(event) => setSelectedCategorie(event.target.value)}
-					>
-						<option value="">[ Catégorie ]</option>
-						{[...new Set(jobsArray.map((job) => job.categorie))].map(
-							(categorie) => (
-								<option key={categorie} value={categorie}>
-									{categorie}
+				<div className="menus">
+					<label htmlFor="categorie-select">
+						Filtrer par catégorie :{" "}
+						<select
+							id="categorie-select"
+							value={selectedCategorie}
+							onChange={(event) => setSelectedCategorie(event.target.value)}
+						>
+							<option value="">[ Catégorie ]</option>
+							{[...new Set(jobsArray.map((job) => job.categorie))].map(
+								(categorie) => (
+									<option key={categorie} value={categorie}>
+										{categorie}
+									</option>
+								),
+							)}
+						</select>
+					</label>
+
+					{/* Filtre par ville */}
+					<label htmlFor="ville-select" style={{ marginLeft: "20px" }}>
+						Filtrer par ville :{" "}
+						<select
+							id="ville-select"
+							value={selectedVille}
+							onChange={(event) => setSelectedVille(event.target.value)}
+						>
+							<option value="">[ Ville ]</option>
+							{[...new Set(jobsArray.map((job) => job.ville))].map((ville) => (
+								<option key={ville} value={ville}>
+									{ville}
 								</option>
-							),
-						)}
-					</select>
-				</label>
-
-				{/* Filtre par ville */}
-				<label htmlFor="ville-select" style={{ marginLeft: "20px" }}>
-					Filtrer par ville :{" "}
-					<select
-						id="ville-select"
-						value={selectedVille}
-						onChange={(event) => setSelectedVille(event.target.value)}
-					>
-						<option value="">[ Ville ]</option>
-						{[...new Set(jobsArray.map((job) => job.ville))].map((ville) => (
-							<option key={ville} value={ville}>
-								{ville}
-							</option>
-						))}
-					</select>
-				</label>
-
+							))}
+						</select>
+					</label>
+				</div>
 				{/* Bouton pour réinitialiser les filtres */}
 				<button
 					type="button"
@@ -98,7 +100,7 @@ function HeaderJobs() {
 					</li>
 				))}
 			</ul>
-		</>
+		</div>
 	);
 }
 
