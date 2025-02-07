@@ -1,0 +1,53 @@
+.partenaires-container{
+  
+  .partenaires {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+
+      .partenaire {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          position: relative;
+
+          .partenaire-logo {
+            max-width: 62px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+          }
+
+          .arrow-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+          }
+
+          .arrow-button.open {
+            transform: rotate(90deg);
+          }
+
+          .partenaire-description {
+            font-size: 0.8rem;
+            margin-top: 10px;
+            padding: 0 10px;
+            max-width: 200px;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+            visibility: hidden;
+        }
+
+        .partenaire-description.open {
+          max-height: 500px; /* Hauteur maximale de la description */
+          opacity: 1;
+          visibility: visible;
+      }
+    }
+  }
+}
