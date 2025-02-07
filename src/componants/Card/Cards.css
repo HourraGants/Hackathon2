@@ -29,7 +29,7 @@
 			font-size: 3rem;
 		}
 		h3,
-		p {
+		.displayNoneCard {
 			display: none;
 		}
 		.hautCard {
@@ -44,7 +44,6 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			/* align-items: center; */
 			margin: 0 auto;
 		}
 	}
@@ -56,6 +55,17 @@
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		margin: 0 10px;
 	}
+	.boutonthune {
+		padding: 5px 30px;
+		font-size: x-large;
+		font-weight: bold;
+		border-radius: 20px;
+		border: none;
+		background-color: rgb(189, 141, 81);
+		box-shadow: 0 4px 8px rgb(189, 141, 81);
+		margin: 0 10px;
+	}
+
 	.linkBouton {
 		padding: 5px 50px;
 		font-size: 1.2rem;
@@ -65,5 +75,12 @@
 		color: white;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		margin: 0 10px;
+		cursor: pointer;
+	}
+}
+.containerCard:hover {
+	background: rgb(189, 141, 81);
+	.boutonthune {
+		background-color: #fff3da;
 	}
 }
