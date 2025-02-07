@@ -1,5 +1,6 @@
 // import React from "react";
 import "./HeaderHome.css";
+import { Link } from "react-router-dom";
 
 const HeaderHome = () => {
 	return (
@@ -10,19 +11,20 @@ const HeaderHome = () => {
 					<br />
 					un travail ?
 				</h2>
-				{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-				<a href="#" className="cta-button">
+
+				<Link className="LinkBouton" to="/galery">
+				<button type="button" className="cta-button">
 					Voir nos offres
-				</a>
+				</button>
+				</Link>
 			</div>
 			<div className="HeaderHome-image">
-				<img
-					src="https://images.piclumen.com/normal/20250207/07/7592641b3cfe4a6b95d5959aa93c61ee.webp"
-					alt=""
-				/>
+				<img src="../src/assets/icons8-medieval-100.webp" alt="#" />
 			</div>
 		</header>
 	);
 };
-
 export default HeaderHome;
+
+
+
