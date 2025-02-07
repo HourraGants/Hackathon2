@@ -1,69 +1,90 @@
-.containerCard {
+.detailAnnonceHeader {
+	height: 200px;
+	width: 80vw;
+	object-fit: cover;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerCard2 {
 	width: 70%;
-	height: 20rem;
+	height: 90vh;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
-	margin: 1rem auto;
+	margin: 50px auto;
 	background: #fff3da;
-	margin: 10rem auto;
+	padding-top: 40px;
 
 	.categorie {
 		display: flex;
-
 		width: 20%;
 		height: 100%;
 		border-radius: 20px;
 	}
+
 	.infoCard {
 		width: 60%;
 		height: 80%;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		margin: auto;
+		/* justify-content: space-between; */
+		/* margin: 0 auto; */
 		h2 {
 			font-size: 3rem;
 		}
-		h3,
-		.displayNoneCard {
-			display: none;
+		h3 {
+			color: rgb(189, 141, 81);
 		}
 		.hautCard {
 			display: flex;
+			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
-			border-bottom: 4px solid #393939;
+			border-bottom: 1px solid #393939;
 			color: #393939;
+			gap: 50px;
+			padding-bottom: 50px;
 		}
 		.basCard {
 			width: 40vw;
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: space-around;
-			margin: 0 auto;
+			/* margin: 0 auto; */
+			gap: 15px;
+			margin-top: 50px;
 		}
 	}
+
 	.boutonGauche {
 		padding: 5px 30px;
 		font-size: 1.2rem;
 		border-radius: 20px;
 		border: none;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-		margin: 0 10px;
+		/* margin: 0 10px; */
+		background: #fff3da;
+		width: 15rem;
 	}
-	.boutonthune {
+
+	.boutonDroite {
 		padding: 5px 30px;
-		font-size: x-large;
-		font-weight: bold;
+		font-size: 1.2rem;
 		border-radius: 20px;
 		border: none;
-		background-color: rgb(189, 141, 81);
-		box-shadow: 0 4px 8px rgb(189, 141, 81);
-		margin: 0 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		/* margin: 0 10px; */
+		background: rgb(189, 141, 81);
+		color: #fff3da;
+		font-weight: bold;
+		width: 15rem;
 	}
 
 	.linkBouton {
@@ -76,11 +97,5 @@
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		margin: 0 10px;
 		cursor: pointer;
-	}
-}
-.containerCard:hover {
-	background: rgb(189, 141, 81);
-	.boutonthune {
-		background-color: #fff3da;
 	}
 }
