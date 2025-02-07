@@ -32,7 +32,7 @@ function HeaderJobs() {
 	return (
 		<>
 			<img
-				src="https://th.bing.com/th/id/OIP.TEnEY6tgmuHzHlfC0wgpYgHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7"
+				src="https://www.tourisme-occitanie.com/uploads/2021/1/la-cite-medievale-de-carcassonne_g-deschamps-crt-occitanie.jpg"
 				alt="a random pecore with some cows"
 			/>
 

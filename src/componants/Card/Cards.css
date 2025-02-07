@@ -1,20 +1,65 @@
 .containerCard {
 	width: 80%;
+	height: 20rem;
 	border: solid 2px black;
+	box-shadow: 5px 5px 10px;
+	border-radius: 15px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	margin: 1rem auto;
+	background: rgba(223, 202, 202, 0.74);
+	margin: 2.5rem auto;
+
 	.categorie {
 		display: flex;
 		margin: 0 auto;
 		width: 20%;
+		height: 80%;
 	}
 	.infoCard {
 		width: 60%;
+		height: 80%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
+		margin: auto;
+		h2 {
+			font-size: 3rem;
+		}
+		h3,
+		p {
+			display: none;
+		}
+		.hautCard {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			border-bottom: 4px solid #393939;
+			color: #393939;
+		}
+		.basCard {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+	}
+	.boutonGauche {
+		padding: 5px 50px;
+		font-size: 1.2rem;
+		border-radius: 20px;
+		border: none;
+		box-shadow: 2px 2px 5px;
+	}
+	.linkBouton {
+		padding: 5px 50px;
+		font-size: 1.2rem;
+		border-radius: 20px;
+		border: none;
+		background-color: #393939;
+		color: white;
+		box-shadow: 2px 2px 5px;
 	}
 }

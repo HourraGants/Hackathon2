@@ -1,0 +1,10 @@
+label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gray;
+	padding: 50px 50px;
+	border-radius: 20px;
+	width: 50%;
+	margin: -2rem auto 2rem;
+}
