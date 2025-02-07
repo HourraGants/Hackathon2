@@ -6,11 +6,8 @@
 		width: 80vw;
 		border-radius: 20px;
 	}
-	label {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: gray;
+	.center {
+		background-color: #fff3da;
 		padding: 50px 50px;
 		border-radius: 20px;
 		width: 50%;
@@ -18,5 +15,14 @@
 		z-index: 1;
 		position: absolute;
 		left: 25%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		.menus {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+		}
 	}
 }

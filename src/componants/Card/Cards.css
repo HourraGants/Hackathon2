@@ -3,20 +3,21 @@
 	height: 20rem;
 	border: solid 2px black;
 	box-shadow: 5px 5px 10px;
-	border-radius: 15px;
+	border-radius: 20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	margin: 1rem auto;
-	background: rgba(223, 202, 202, 0.74);
+	background: #fff3da;
 	margin: 10rem auto;
 
 	.categorie {
 		display: flex;
-		margin: 0 auto;
+
 		width: 20%;
-		height: 80%;
+		height: 100%;
+		border-radius: 20px;
 	}
 	.infoCard {
 		width: 60%;
