@@ -4,6 +4,7 @@ import "./Footer.css";
 function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
   const openModal = (content: SetStateAction<string>) => {
     setModalContent(content);
@@ -15,25 +16,59 @@ function Footer() {
     setModalContent("");
   }
 
+  const handleMouseEnter = (imageName: string) => {
+    setHoveredImage(imageName);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredImage(null);
+  };
+
 	return (
 		<>
 			<div className="footer-container">
 				<div className="footer">
           <div>
-            <p>Notre réseau</p>
+            <p>Notre toile :</p>
           </div>
           <div className="footer-reseau">
-            <div>
-              <img src="../src/assets/pigeon.png" alt="pigeon" title="Pigeon Voyageur"/>
-              <p>HomingBird</p>
+            <div onMouseEnter={() => handleMouseEnter("pigeon")}
+            onMouseLeave={handleMouseLeave}>
+              <img
+                src="../src/assets/pigeon.png"
+                alt="Pigeon Voyageur"
+                title="Pigeon Voyageur" />
+              <h3>HomingBird</h3>
+              {hoveredImage === "pigeon" && (
+              <div className="tooltip">
+                Le moyen le plus rapide pour transmettre des messages !
+              </div>
+            )}
             </div>
-            <div>
-              <img src="../src/assets/messager.png" alt="messager" title="Messager"/>
-              <p>I'mSpeed</p>
+            <div onMouseEnter={() => handleMouseEnter("messager")}
+            onMouseLeave={handleMouseLeave}>
+              <img 
+              src="../src/assets/messager.png" 
+              alt="messager" 
+              title="Messager" />
+              <h3>I'mSpeed</h3>
+              {hoveredImage === "messager" && (
+              <div className="tooltip">
+                Nous possèdons les coursiers et messagers les plus sûrs du royaume !
+              </div>
+            )}
             </div>
-            <div>
-              <img src="../src/assets/parchemin.png" alt="parchemin" title="Nos informations"/>
-              <p>Informations</p>
+            <div onMouseEnter={() => handleMouseEnter("parchemin")}
+            onMouseLeave={handleMouseLeave}>
+              <img 
+                src="../src/assets/parchemin.png" 
+                alt="parchemin" title="Nos informations" />
+              <h3>Informations</h3>
+              {hoveredImage === "parchemin" && (
+              <div className="tooltip">
+                Nos informations : Le moyen le plus sûr pour connaître tous les secrets !
+              </div>
+            )}
             </div>
           </div>
           <div id="footer-mentions">
